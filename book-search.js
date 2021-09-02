@@ -17,10 +17,10 @@ searchBtn.addEventListener('click', ()=>{
     fetch(url)
     .then(res => res.json())
     .then(data => {
-        if(data.numFound !== 0){
-            noSearchResult.innerText ='';
-        }
-        displayData(data)
+        // if(data.numFound !== 0){
+        //     noSearchResult.innerText ='';
+        // }
+        displayData(data);
     });
 }
 )
@@ -68,7 +68,10 @@ const displayData = data =>{
         //     // console.log(imgDiv.length);
         //     // document.getElementById('book-display').appendChild(imgDiv);
         // 
-        console.log(item.publisher)
+        // console.log(item);
+        
+        const newArr = item.publisher.filter(items=> items!==undefined);
+        console.log(newArr);
         // if(type of (${item.publisher})=== undefined ){
         //     console.log("nothing to display");
         // }
