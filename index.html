@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Archive</title>
+    <!-- Vanilla css file link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Main section of the website -->
+    <main class="container">
+      <section id="search-section">
+        <!-- Search Box and Search Button section -->
+        <div class="d-flex justify-content-center align-items-center mt-5">
+          <input
+            id="search-book-name"
+            type="text"
+            placeholder="Search for books"
+          />
+          <input
+            id="search-books"
+            class="btn btn-primary ms-2"
+            type="submit"
+            value="Submit"
+          />
+        </div>
+      </section>
+      <section class="container mt-3">
+        <div id="no-result" class="text-center text-danger"></div>
+        <div id="book-display" class="row">
+          <!-- <div class="col-md-3">
+            <div class="rounded overflow-hidden border p-3">
+              <img src="" alt="" />
+            </div>
+            <div
+              class="
+                py-2
+                d-flex
+                justify-content-between
+                align-items-center
+                d-md-block
+                text-md-center
+              "
+            >
+              <h1>Title</h1>
+              <button class="btn btn-dark">More Details</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <!-- book-search js -->
+    <script src="book-search.js"></script>
+    <!-- Bootstrap JS script link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
